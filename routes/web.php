@@ -15,7 +15,7 @@ use App\Http\Controllers\AuthorController;
 |
 */
 
-$router->group(['prefix' => 'author'], function () use ($router) {
+$router->group(['prefix' => 'authors'], function () use ($router) {
     $router->get('/', 'AuthorController@index');
     $router->post('/', 'AuthorController@store');
     $router->get('{author}', 'AuthorController@show');
